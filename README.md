@@ -1,11 +1,11 @@
 # ModelAPI
-Demo project for deployment of ML model using FastAPI.
+Demo project for deployment of ML models using FastAPI.
 
 ## Prerequisites
 1. Python 3.x
 2. pip (Python package manager)
 
-## Setup FastAPI
+## Install FastAPI
 1. Create a Python virtual environment.
    ```
    python3 -m venv model_api_env
@@ -48,4 +48,7 @@ Demo project for deployment of ML model using FastAPI.
 3. Use ModelAPI to predict images.
 
    ![predict_image](docs/ModelAPI_result.gif)
+
+   It will predict an image from the mentioned list.
+   `[airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck]`
    
