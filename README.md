@@ -51,4 +51,13 @@ Demo project for deployment of ML models using FastAPI.
 
    It will predict an image from the mentioned list.
    `[airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck]`
-   
+
+## Customization
+* Model: You can replace the pre-trained model (image.h5) with your own trained model by placing it in the project directory and updating the model = models.load_model("image.h5") line in main.py.
+
+* Input Data: By default, the API is configured to accept image files for prediction. However, if you want to accept different types of input data, such as text, you can modify the predict_image function in main.py to handle the new data format appropriately. For example, if you want to support text input, you can update the function to accept text input instead of an image file. You'll also need to modify the model input accordingly and update the logic to preprocess the text data before making predictions.
+
+* Class Names: Update the class_names list in main.py with your own class names.
+
+## Acknowledgement
+The model utilized in this project has been obtained from [Hugging Face](https://huggingface.co/).
